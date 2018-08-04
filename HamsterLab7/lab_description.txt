@@ -1,0 +1,41 @@
+Lab8 - Continuous Space Motion Planning: C-Space, Discretization, Connectivity
+
+Students can continue to work on components in grid navigation project from yesterday. Only those who have FINISHED grid navigation project should try continuous space motion planning.
+
+Coding Assignment #1 - Grid Navigation
+1. GridGraph class
+2. BFS search engine
+3. Graph display code
+4. Convert path(list of ordered nodes) to sequence of movements
+5. Have Hamster execute the sequence of moves on grid
+
+
+Coding Assignment #2 - Continuous Space Motion Planning
+Below is a map of a work space whose origin is at center of window:
+Vertices of each rectangle below are [x1,y1, x2, y2]
+	 obs1 = [-100, -180, 0, -140]
+        obs2 = [-140, -180, -100, -80]
+        obs3 = [-100, 140, 0, 180]
+        obs4 = [-140, 80, -100, 180]
+        obs5 = [0, -50, 40, 50]
+        obs6 = [-260, -20, -220, 20]
+        obs7 = [40, 60, 140, 100]
+        virtual_world area = [-300,-200,300,200]
+
+The following tasks are involved in continuous space motion planning:
+
+1. Compute C-obstacles from given work space map. Hamster is simulated as a circle with a radius of 28 pixels.
+2. Implement 'cutting' algorithm to compute free cells
+3. Compute connectivity of two free cells by locating the midpoint of overlapped free edges. A free edge is the overlapped edge shared by two free cells. These points referred to as free points and are nodes in the resulting graph.
+4. Compute distance connecting two neighboring free points. This distance is the edge cost in the graph.
+5. Generate graph using the nodes and edges from above. (code provided in graph_with_edge_cost.py)
+6. Find a path by searching(e.g., Dijkstra) the graph for any given start and goal.(code included in the starter program)
+
+
+. Develop algorithms for tasks listed in continuous space planning. Show your algorithms to TA’s using block/flow diagrams before coding starts.
+
+. Implement algorithms for continuous space path planning, item 1 through 4 in the above list. Start from the top of the list.
+
+
+
+
